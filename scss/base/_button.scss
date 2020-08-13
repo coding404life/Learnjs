@@ -1,0 +1,22 @@
+.btn{
+    font-family: $latoFont;
+    font-weight: $regular;
+}
+.btn-dark{
+    background-color: $transColor;
+    border:1px solid $transColor;
+}
+.btn-light{
+    background-color: $transWhiteColor;
+    border:1px solid rgba(250,250,250,.5);
+    color:$whiteColor
+}
+.btn-warning{
+    background-color: $yellowColor;
+    color:$whiteColor
+}
+@include mediaQuery(576px){
+    .btn{
+        font-size: .9rem;
+    }
+}

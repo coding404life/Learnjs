@@ -1,0 +1,23 @@
+//mixin media query
+@mixin mediaQuery($arg...){
+    @if length($arg) == 1{
+        @media(max-width: nth($arg, 1)){
+            @content;
+        }
+    }
+    @if length($arg) == 2{
+        @media(max-width:nth($arg, 1)) and (min-width: nth($arg, 2)){
+            @content;
+        }
+    }
+}
+//crossbrowser mixin
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+     -khtml-#{$property}: #{$value};
+       -moz-#{$property}: #{$value};
+        -ms-#{$property}: #{$value};
+         -o-#{$property}: #{$value};
+            #{$property}: #{$value};
+  }
+  

@@ -1,0 +1,10 @@
+//body styls
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $sans;
+    font-weight: $light;
+    transition: all ease-in-out 250ms;
+}
